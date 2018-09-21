@@ -14,14 +14,14 @@ go:
 
 install:
 - npm install -g newman
-# before_script:
+
 before_script:
 - node --version
 - npm --version
 - newman --version
 - chmod +x ./tests/test_run.sh
 # - gem install travis$ travis encrypt $(heroku auth:token) --add deploy.api_key
-- gem install dpl
+# - gem install dpl
 # - dpl --provider=heroku --app=quailapp --api-key=$HEROKU_PRODUCTION_API_KEY
 deploy:
   provider: heroku
