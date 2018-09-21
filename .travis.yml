@@ -14,16 +14,19 @@ go:
 
 install:
 - npm install -g newman
+- npm install -g newman-reporter-html
+# - gem install dpl
 
 branches:
  only:
   - master
   - qa
-  
+
 before_script:
 - node --version
 - npm --version
 - newman --version
+- 
 - chmod +x ./tests/test_run.sh
 # - gem install travis$ travis encrypt $(heroku auth:token) --add deploy.api_key
 # - gem install dpl
