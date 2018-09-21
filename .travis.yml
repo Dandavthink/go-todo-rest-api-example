@@ -15,7 +15,7 @@ go:
 install:
 - npm install -g newman
 # before_script:
-before_deploy:
+before_script:
 - node --version
 - npm --version
 - newman --version
