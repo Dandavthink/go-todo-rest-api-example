@@ -25,6 +25,7 @@ before_script:
   # - node_modules/.bin/newman --version
   - newman --version
   - chmod +x ./tests/test_run.sh
+  - gem install travis$ travis encrypt $(heroku auth:token) --add deploy.api_key
 script:
  - "./tests/test_run.sh"
 #   on:
