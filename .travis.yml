@@ -5,11 +5,18 @@ go:
 - '1.11'
 #env:
 #  global:
-#  - BASE_HOST=127.0.0.1
+#  - BASE_HOST=https://travis-ci-demo1.herokuapp.com/
 #   # - LOG_LEVEL=0
 # branches:
 #   only:
 #   - master
+deploy:
+  provider: heroku
+  # api_key:
+  #   secure: <your-api-key>
+  app: go-todo-rest-api-example
+  on:
+    repo: Dandavthink/go-todo-rest-api-example
 install:
 - npm install -g newman
 before_script:
