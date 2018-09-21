@@ -28,7 +28,7 @@ before_script:
 # after_deploy:
 # - "./tests/test_run.sh"
 script:
-# - "./tests/test_run.sh"
+- "./tests/test_run.sh"
 
 deploy:
   provider: heroku
