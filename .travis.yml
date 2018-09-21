@@ -17,8 +17,9 @@ before_script:
   - npm --version
   # - node_modules/.bin/newman --version
   - newman --version
+  - chmod +x ./tests/test_run.sh
 script:
-  - newman run tests/bitcoinz.postman_collection
+ - "./tests/test_run.sh"
 #   on:
 #     branch: master
 
