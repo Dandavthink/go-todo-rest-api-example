@@ -32,8 +32,8 @@ deploy:
     secure: hwO1NwlYdYFbfrn0QDM9OZhU3Op7ef6+Ab8MMHcexftBH/KA4LTuJy6Z/XKi6wVz+4rDqgWlwtrXUdPIVMGNmMne0hFmKdvNZj9yKhRy4P/X67HzxlfxRXmAYni8QFIQ8V0KIBqpnXgBvMb2WiJGX3NlBwOGV3uoi2ObokZrO9jESpf3viEoBzGmLbgerycJ254W9UaRfhk1r4u18qyGWgKEFOrjQYn5/nVCovA8ZKD+kYrvH8V+S7LQdTn05Lkvy9AiGx+6Qj9Dq+AlIFqQkJ1yC52eT8yqZdHnV7GPNwAbTIBGMc9P0q8PRdUAYPyUcgZLP71Cv9PssBSrFXWBibmsbTEsDroq1UaGRzKumnauY9+TgMEzhtmnUHk1qe00zPVJK9zqTDU2FEMhn2jnCtdesTG3eFE/zHP1rTgU3w/ErMRxW2/cP4DDAyHUGnKd1hQRz8N2MPwFlh7qR5oEl38JPxNog0V0sDMn+obIBlR0oSDN6j0WrkpGNexAdtY8Qgx+hiaI6Jzg349YD3+CAR0cah+PLIvhyL7PHVr5CCBHZKXde7s8p5EqIHPX0VgHPVd4UuVE2V4X5rauD0zpb/aW/5XlkzTXh7TVQSu0iKboCVexeQOqALwBgD71yCRIY0VMhhz8qyxYxiLXVH9GHjjLGg88qo5EWzGMhvVbU94=
   only:
    - master
-after_deploy:
-- "./tests/test_run.sh"
+# after_deploy:
+# - "./tests/test_run.sh"
 # script:
 # - "./tests/test_run.sh"
 
