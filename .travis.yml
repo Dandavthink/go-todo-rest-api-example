@@ -12,6 +12,13 @@ env:
   - master
 install:
 - npm install -g newman
+before_script:
+  - node --version
+  - npm --version
+  - node_modules/.bin/newman --version
+
+script:
+  - node_modules/.bin/newman run tests/bitcoinz.postman_collection
   on:
     branch: master
 
